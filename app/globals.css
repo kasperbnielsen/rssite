@@ -2,26 +2,85 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: deeppink;
+}
+
+.navbar {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+}
+
+.nav {
+  color: lightskyblue;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-right: 1px;
+  border-color: grey;
+  border-style: outset;
+  display: flex;
+}
+
+.navitem {
+  min-width: 125px;
+  justify-content: center;
+}
+
+.navitem:hover {
+  text-shadow: 1px;
+  background-color: green;
+  transition: background-color 0.5s;
+}
+
+.searchbar {
+  height: 20px;
+  align-items: center;
+  margin-left: 40px;
+  margin-top: 12.5px;
+  box-sizing: border-box;
+}
+
+.content {
+  background-color: cadetblue;
+  margin-left: 15%;
+  margin-right: 15%;
+  height: 10000px;
+  padding: 125px;
+  display: flex;
+}
+
+.dropdown {
+  position: fixed;
+}
+
+.hello {
+  position: absolute;
+}
+
+.dropdownitem {
+  min-width: 125px;
+  color: lightblue;
+  display: flex;
+  font-size: 14px;
+  border: 1px;
+  border-color: black;
+  border-style: outset;
+  padding: 14px;
+  text-align: center;
+  background-color: black;
+}
+
+.dropdowndiv {
+  min-width: 125px;
+  justify-content: center;
+  text-align: center;
+}
+
+.dropdownitemdiv {
+  position: absolute;
 }
